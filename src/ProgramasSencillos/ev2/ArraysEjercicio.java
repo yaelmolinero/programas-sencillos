@@ -1,4 +1,4 @@
-package ProgramasSencillos.ev3;
+package ProgramasSencillos.ev2;
 import java.util.Arrays;
 import java.util.Scanner;
 
