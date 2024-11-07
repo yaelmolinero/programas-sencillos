@@ -19,3 +19,5 @@
 - 17: [Ticket](/src/ProgramasSencillos/ev2/Ticket.java)
 - 18: [Jugadores](/src/ProgramasSencillos/ev2/Jugadores.java)
 - 19: [Inventario](/src/ProgramasSencillos/ev2/Inventario.java)
+- 20: [ArregloDe10](/src/ProgramasSencillos/ev2/ArregloDe10.java)
+- 21: [MediaModa](/src/ProgramasSencillos/ev2/MediaModa.java)
