@@ -5,3 +5,5 @@
 - 03: [SumaDeMatrices](/src/ProgramasSencillos/ev3/SumaDeMatrices.java)
 - 04: [Practica](/src/ProgramasSencillos/ev3/Proyecto.java)
 - 05: [CuadroDialogo](/src/ProgramasSencillos/ev3/CuadroDialogo.java)
+- 06: [ComparacionMatrices](/src/ProgramasSencillos/ev3/ComparacionMatrices.java)
+- 07: [Practica2](/src/ProgramasSencillos/ev3/Proyecto2.java)
