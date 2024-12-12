@@ -16,12 +16,10 @@ public class Proyecto {  // Creamos la clase para la app
         System.out.print("Precio de la venta: $");
         int precio = scanner.nextInt();  // Guardamos el precio que ingrese el usuario
 
-        System.out.print("Cantidad vendida: ");
-        int cantidad = scanner.nextInt();  // Guardamos la cantidad que ingrese el usuario
+        // System.out.print("Cantidad vendida: ");
         scanner.nextLine();  // Limpiamos el buffer del scanner
 
         tabla[i][0] = precio;  // Llenamos el precio en la tabla
-        tabla[i][1] = cantidad;    // Llenamos la cantidad en la tabla
         
         int incentivoBruto = precio;
         // Opcion del 5%
@@ -31,15 +29,15 @@ public class Proyecto {  // Creamos la clase para la app
           tabla[i][3] = 5;  // Guardamos el porcentaje del incentivo
         }
         // Opcion del 10%
-        else if (incentivoBruto>1300&&incentivoBruto<=1700){
-          int incentivo=(incentivoBruto*10)/100;  // Calcula el incentivo
-          tabla[i][2]=incentivo;  // Guardamos el incentivo
+        else if (incentivoBruto > 1300 && incentivoBruto <= 1700){
+          int incentivo = (incentivoBruto * 10)/100;  // Calcula el incentivo
+          tabla[i][2] = incentivo;  // Guardamos el incentivo
           tabla[i][3] = 10;  // Guardamos el porcentaje del incentivo
         }
         // Opcion del 15%
-        else if (incentivoBruto>1700&&incentivoBruto<=2000){
-          int incentivo=(incentivoBruto*15)/ 100;  // Calcula el incentivo
-          tabla[i][2]=incentivo;  // Guardamos el incentivo
+        else if (incentivoBruto > 1700 && incentivoBruto <= 2000){
+          int incentivo = (incentivoBruto * 15)/ 100;  // Calcula el incentivo
+          tabla[i][2] = incentivo;  // Guardamos el incentivo
           tabla[i][3] = 15;  // Guardamos el porcentaje del incentivo
         }
       }
@@ -53,12 +51,12 @@ public class Proyecto {  // Creamos la clase para la app
 
       System.out.println("----------------------------------------");
       // Imprimimos el encabezado de la tabla
-      System.out.printf("%-8s %-8s %-10s %-8s\n", "Precio", "Cantidad", "Incentivos", "Porcentaje");
+      System.out.printf("%-8s %-10s %-8s\n", "Precio", "Incentivos", "Porcentaje");
       
       // Ciclo para imprimir los datos de la tabla
       for (int i = 0; i < CANTIDAD_PRODUCTOS; i++) {
         // Imprimimos los valores de la tabla
-        System.out.printf("%-8d %-8d %-10d %-8d\n", tabla[i][0], tabla[i][1], tabla[i][2], tabla[i][3]);
+        System.out.printf("%-8d %-10d %-8d\n", tabla[i][0], tabla[i][2], tabla[i][3]);
 
         // Variables del mayor, menor de precio y venta por ciclo
         int precioVenta = tabla[i][0], incentivoActual = tabla[i][2], porcentajeIncentivo = tabla[i][3];
